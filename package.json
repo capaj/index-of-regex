@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "a tiny utility for indexOf and lastIndexOf methods that accept regexes",
   "main": "index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "pretest": "standard",
-    "test": "ava"
+    "test": "ava",
+    "dtslint": "dtslint types"
   },
   "repository": {
     "type": "git",
