@@ -4,7 +4,7 @@ module.exports = {
     return (indexOf >= 0) ? (indexOf + (startpos || 0)) : indexOf
   },
   lastIndexOfRegex (str, regex, startpos) {
-    regex = (regex.global) ? regex : new RegExp(regex.source, 'g' + (regex.ignoreCase ? 'i' : '') + (regex.multiLine ? 'm' : ''))
+    regex = (regex.global) ? regex : new RegExp(regex.source, 'g' + (regex.ignoreCase ? 'i' : '') + (regex.multiline ? 'm' : ''))
     if (typeof (startpos) === 'undefined') {
       startpos = str.length
     } else if (startpos < 0) {
